@@ -1,0 +1,43 @@
+.button{
+    color: rgb(255, 255, 255);
+    background: #EB5757;
+    border-radius: 10px;
+}
+.button:hover{
+    background: #e58484;
+    cursor: pointer;
+}
+.dark__button{
+    background: #303F56;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 17px;
+}
+.dark__button:hover{
+    background: #637796;
+    cursor: pointer;
+}
+.title{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #303F56;
+}
+.title__red{
+    color: #EB5757;
+    position: relative;
+}
+.title__red::after{
+    content: url(../Image/book/line.svg);
+    display: block;
+    position: absolute;
+    right: -35px;
+    top: -20px;
+}
+@media(max-width: 568.98px){
+    .title__red::after{
+        display: none;
+    }
+}
